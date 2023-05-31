@@ -1,0 +1,41 @@
+.how-to{
+  max-width: 120rem;
+  margin: 0 auto;
+  padding-bottom: 6rem;
+
+  &__header{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 50%;
+  }
+
+  &__title{
+    font-size: $font-size-header;
+    font-weight: 500;
+  }
+
+  &__description{
+    margin: 4rem;
+  }
+
+  &__steps{
+    margin-top: 6rem;
+  }
+
+  &__step{
+    padding: 2rem 0;
+  }
+
+  &__step-image{
+    max-width: 10rem;
+  }
+
+  &__step-name{
+    margin-top: 2rem;
+    font-size: $font-size-subheader;
+  }
+
+  &__step-description{
+    margin-top: 2rem;
+  }
+}

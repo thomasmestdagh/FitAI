@@ -1,0 +1,61 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: $font-size-normal;
+  font-family: 'Inter', sans-serif;
+  color: $font-gray;
+}
+
+p{
+  line-height: 1.5;
+}
+
+.container{
+  overflow: hidden;
+}
+
+
+
+.btn{
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: none;
+  background-color: #bbb;
+  color: $font-gray;
+  font-family: inherit;
+}
+
+//spacing
+.flex--between{
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.grid--2col{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.grid--3col{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.padding--large{
+  padding: 4rem 3rem;
+}
+
+
