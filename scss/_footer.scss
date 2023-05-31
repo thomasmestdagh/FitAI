@@ -9,6 +9,7 @@
     justify-items: center;
     max-width: 120rem;
     margin: 0 auto;
+    padding: 0 3rem;
 
 
     > *{
@@ -91,5 +92,26 @@
     color: $light-grey;
     border-top: 2px solid $light-grey;
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .footer{
+
+    &__wrapper{
+      grid-template-columns: 1fr;
+    }
+
+    &__legal{
+      grid-column: unset;
+    }
+
+    &__explore,&__socials{
+      justify-self: center;
+    }
+
+    &__explore{
+      text-align: center;
+    }
   }
 }

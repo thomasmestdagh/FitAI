@@ -2,7 +2,7 @@
   background-color: $background-gray;
   color: white; 
   text-align: center;
-  padding: 8rem 0 12rem 0;
+  padding: 8rem 3rem 12rem 3rem;
 
   &__wrapper{
     max-width: 120rem;
@@ -51,5 +51,18 @@
 
   &__description{
     margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .testimonials{
+
+    &__testimonial{
+      margin-top: 4rem;
+    }
+
+    &__wrapper{
+      padding: 0 3rem;
+    }
   }
 }

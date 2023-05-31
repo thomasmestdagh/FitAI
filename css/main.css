@@ -12,6 +12,7 @@ body {
   font-size: 1.8rem;
   font-family: "Inter", sans-serif;
   color: #212529;
+  overflow-x: hidden;
 }
 
 p {
@@ -41,7 +42,7 @@ p {
 
 .grid--2col {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
@@ -55,6 +56,20 @@ p {
   padding: 4rem 3rem;
 }
 
+@media only screen and (max-width: 800px) {
+  .grid--2col {
+    grid-template-columns: 1fr;
+  }
+  .grid--3col {
+    grid-template-columns: 1fr;
+  }
+  .flex--between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6rem;
+  }
+}
 .header {
   background-color: #343a40;
   padding: 6rem 0;
@@ -137,6 +152,24 @@ p {
   font-weight: 600;
 }
 
+@media only screen and (max-width: 800px) {
+  .header {
+    padding: 0;
+    background-color: white;
+  }
+  .header__wrapper {
+    border-radius: 0 0 2rem 2rem;
+  }
+  .header__logos {
+    grid-column: unset;
+  }
+  .header .container:first-child {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0.4)), url("../images/Gyms/samuel-girven-fqMu99l8sqo-unsplash.jpg");
+  }
+  .header .container:nth-child(2) {
+    display: none;
+  }
+}
 .hero {
   max-width: 120rem;
   margin: 0 auto;
@@ -200,19 +233,18 @@ p {
   text-align: center;
   margin: 0 auto;
   max-width: 50%;
+  padding: 3rem;
 }
 .how-to__title {
   font-size: 4.2rem;
   font-weight: 500;
-}
-.how-to__description {
-  margin: 4rem;
+  margin-bottom: 3rem;
 }
 .how-to__steps {
   margin-top: 6rem;
 }
 .how-to__step {
-  padding: 2rem 0;
+  padding: 2rem 3rem;
 }
 .how-to__step-image {
   max-width: 10rem;
@@ -225,11 +257,17 @@ p {
   margin-top: 2rem;
 }
 
+@media only screen and (max-width: 800px) {
+  .how-to__header {
+    max-width: 100%;
+    text-align: left;
+  }
+}
 .testimonials {
   background-color: #343a40;
   color: white;
   text-align: center;
-  padding: 8rem 0 12rem 0;
+  padding: 8rem 3rem 12rem 3rem;
 }
 .testimonials__wrapper {
   max-width: 120rem;
@@ -272,10 +310,19 @@ p {
   margin-top: 2rem;
 }
 
+@media only screen and (max-width: 800px) {
+  .testimonials__testimonial {
+    margin-top: 4rem;
+  }
+  .testimonials__wrapper {
+    padding: 0 3rem;
+  }
+}
 .plans {
   max-width: 120rem;
   margin: 0 auto;
   margin-bottom: 12rem;
+  padding: 0 3rem;
 }
 .plans__title {
   font-size: 4.2rem;
@@ -321,6 +368,14 @@ p {
   width: 2rem;
 }
 
+@media only screen and (max-width: 800px) {
+  .plans {
+    padding: 0 3rem;
+  }
+  .card--dark {
+    transform: scale(1);
+  }
+}
 .footer {
   background-color: #343a40;
   padding: 4rem 0;
@@ -331,6 +386,7 @@ p {
   justify-items: center;
   max-width: 120rem;
   margin: 0 auto;
+  padding: 0 3rem;
 }
 .footer__wrapper > * {
   padding: 2rem 0;
@@ -398,6 +454,21 @@ p {
   color: #e9ecef;
   border-top: 2px solid #e9ecef;
   width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .footer__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .footer__legal {
+    grid-column: unset;
+  }
+  .footer__explore, .footer__socials {
+    justify-self: center;
+  }
+  .footer__explore {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

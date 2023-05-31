@@ -1,5 +1,5 @@
 //scrolling behaviour
-const headerLinks = document.querySelectorAll('.header__link a');
+const headerLinks = document.querySelectorAll('.scroll-link a');
 
 for(const link of headerLinks){
   link.addEventListener('click', clickHandler);
