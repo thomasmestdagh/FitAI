@@ -105,7 +105,7 @@
     background-color: white;
 
     &__wrapper{
-
+      width: 100vw;
       border-radius: 0 0 2rem 2rem;
     }
 
@@ -113,7 +113,12 @@
       grid-column: unset;
     }
 
+    &__logo{
+      max-width: 25%;
+    }
+
     .container:first-child{
+      
       background: linear-gradient(to bottom, rgba(255,255,255,0.4), rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0.4)), url('../images/Gyms/samuel-girven-fqMu99l8sqo-unsplash.jpg');
     }
 

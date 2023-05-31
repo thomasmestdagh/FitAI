@@ -62,7 +62,7 @@
 
   &__btn{
     background-color: #fcc419;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 2rem;
     border-radius: 0 1rem 1rem 0;
     border: none;
     font-weight: 600;
@@ -100,6 +100,17 @@
 
     &__wrapper{
       grid-template-columns: 1fr;
+    }
+
+    &__email{
+      display: block;
+      border-radius: 2rem 2rem 0 0;
+    }
+
+    &__btn{
+      display: block;
+      width: 100%;
+      border-radius: 0 0 2rem 2rem;
     }
 
     &__legal{
