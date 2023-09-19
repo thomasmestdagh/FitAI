@@ -1,0 +1,93 @@
+.how-to {
+  padding-bottom: 6rem;
+  position: relative;
+  overflow: hidden;
+
+  &__header {
+    max-width: 120rem;
+    margin: 0 auto;
+    // text-align: center;
+    // margin: 0 auto;
+    // max-width: 50%;
+    // padding: 3rem;
+    padding-top: 10rem;
+
+    gap: 10rem;
+  }
+
+  &__title {
+    font-size: $font-size-header;
+    font-weight: 500;
+    margin-bottom: 3rem;
+  }
+
+  &__description {
+    // margin: 4rem;
+  }
+
+  &__image {
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+
+  &__image img {
+    width: 100%;
+    transition: 0.2s all;
+    transform: scale(1.05);
+
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+
+  &__steps {
+    max-width: 120rem;
+    margin: 0 auto;
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+    gap: 5rem;
+  }
+
+  &__step {
+    // padding: 2rem 3rem;
+  }
+
+  &__step-image {
+    max-width: 10rem;
+  }
+
+  &__step-name {
+    margin-top: 2rem;
+    font-size: $font-size-subheader;
+  }
+
+  &__step-description {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .how-to {
+    // padding: 3rem;
+    &__header {
+      padding-top: 5rem;
+      max-width: 100%;
+      text-align: left;
+
+      & *:first-child {
+        order: -1;
+      }
+      & *:first-child {
+        order: 1;
+      }
+    }
+
+    &__steps {
+      margin-top: 10rem;
+    }
+
+    &__step:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}

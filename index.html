@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./scripts/script.js" defer></script>
+    <title>FITai</title>
+  </head>
+  <body>
+    <!-- MOBILE NAVIGATION -->
+    <nav class="mobile-navigation">
+      <button class="mobile-button"></button>
+      <ul class="mobile-links">
+        <li class="mobile-link">
+          <a href=".hero" class="scroll-link">About us</a>
+        </li>
+        <li class="scroll-link mobile-link">
+          <a href=".how-to" class="scroll-link">How To</a>
+        </li>
+        <li class="scroll-link mobile-link">
+          <a href=".testimonials" class="scroll-link">Testimonials</a>
+        </li>
+        <li class="scroll-link mobile-link">
+          <a href=".plans" class="scroll-link">Pricing</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- HEADER SECTION -->
+    <header class="header section">
+      <div class="header__wrapper grid--2col">
+        <div class="container padding--large">
+          <div class="main-logo">
+            <img
+              class="main-logo__img"
+              src="images/fitai-logo.png"
+              alt="the Fit ai logo"
+            />
+            <h1 class="main-logo__name"><span>FIT</span>AI</h1>
+          </div>
+          <h2 class="header__title">
+            AI-powered Gym for Personalized
+            <span class="accent-underline">Progress</span>
+          </h2>
+          <p class="header__description">
+            Unleash the Power of Technology, Transform Your Fitness Journey!
+          </p>
+          <a href=".hero" class="btn header__btn scroll-link">Start Today</a>
+        </div>
+        <div class="container">
+          <nav class="header__navigation padding--large">
+            <ul class="header__links">
+              <li class="header__link">
+                <a href=".hero" class="scroll-link">About us</a>
+              </li>
+              <li class="header__link">
+                <a href=".how-to" class="scroll-link">How To</a>
+              </li>
+              <li class="header__link">
+                <a href=".testimonials" class="scroll-link">Testimonials</a>
+              </li>
+              <li class="header__link">
+                <a href=".plans" class="scroll-link">Pricing</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__logos">
+          <img
+            src="images/Logos/fitbit.png"
+            alt="Fitbit logo"
+            class="header__logo"
+          />
+          <img
+            src="images/Logos/menshealth.png"
+            alt="Mens-Health logo"
+            class="header__logo"
+          />
+          <img
+            src="images/Logos/peloton.png"
+            alt="Peloton logo"
+            class="header__logo"
+          />
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <!-- HERO SECTION -->
+      <section class="hero section">
+        <div class="hero__wrapper grid--2col">
+          <div class="container">
+            <h2 class="hero__title">
+              Unleash Your <span class="accent-underline">Potential</span> with
+              FitAI
+            </h2>
+            <p class="hero__content">
+              Experience the fitness revolution with FitAI! Personalized plans,
+              real-time feedback, virtual classes, and progress tracking. Unlock
+              your potential, reach your goals, and stay motivated on your
+              journey to a healthier, fitter you. Join us and transform your
+              fitness with the power of AI!
+            </p>
+          </div>
+          <div class="hero__images">
+            <div class="hero__image">
+              <img
+                src="./images/workout/aaron-brogden-9y4MaTz2Js0-unsplash.jpg"
+                alt="person working out"
+              />
+            </div>
+
+            <div class="hero__image">
+              <img
+                src="./images/workout/andreea-boncota-icxORkp1Yv0-unsplash.jpg"
+                alt="person working out"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- HOW TO  -->
+      <section class="how-to section">
+        <div class="how-to__header grid--2col">
+          <div class="how-to__image">
+            <img
+              src="./images/workout/jonathan-borba-R0y_bEUjiOM-unsplash.jpg"
+              alt="person working out"
+            />
+          </div>
+          <div>
+            <h2 class="how-to__title">
+              How It <span class="accent-underline">Works</span>
+            </h2>
+            <p class="how-to__description">
+              Experience the fitness revolution with FitAI! Personalized plans,
+              real-time feedback, virtual classes, and progress tracking. Unlock
+              your potential, reach your goals, and stay motivated on your
+              journey to a healthier, fitter you. Join us and transform your
+              fitness with the power of AI!
+            </p>
+          </div>
+        </div>
+        <div class="how-to__steps grid--3col">
+          <div class="how-to__step">
+            <img
+              src="./images/how-to/analyze-svgrepo-com.svg"
+              alt="analyze icon"
+              class="how-to__step-image"
+            />
+            <h3 class="how-to__step-name">Assess & Personalize</h3>
+            <p class="how-to__step-description">
+              FitAI analyzes your fitness level and goals using AI and computer
+              vision, creating a customized workout plan just for you.
+            </p>
+          </div>
+          <div class="how-to__step">
+            <img
+              src="./images/how-to/feedback-svgrepo-com.svg"
+              alt="analyze icon"
+              class="how-to__step-image"
+            />
+            <h3 class="how-to__step-name">Real-Time Guidance</h3>
+            <p class="how-to__step-description">
+              High-tech cameras and virtual trainers provide real-time
+              instructions and feedback, ensuring proper form and preventing
+              injuries.
+            </p>
+          </div>
+          <div class="how-to__step">
+            <img
+              src="./images/how-to/forward-svgrepo-com.svg"
+              alt="analyze icon"
+              class="how-to__step-image"
+            />
+            <h3 class="how-to__step-name">Track, Progress, & Motivate</h3>
+            <p class="how-to__step-description">
+              Track your progress, set goals, and stay motivated with real-time
+              workout data and a mobile app that offers virtual fitness classes.
+              FitAI keeps you on the path to a healthier, fitter you.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- TESTIMONIALS -->
+      <section class="testimonials section">
+        <div class="testimonials__wrapper">
+          <h2 class="testimonials__title">
+            A Word From Our <span class="accent-underline">Customers</span>
+          </h2>
+          <div class="testimonials__cards flex--between">
+            <div class="testimonials__testimonial">
+              <img
+                class="testimonials__image"
+                src="./images/faces/aleksandr-minakov-xDyqR14KyAs-unsplash.jpg"
+                alt="portrait of Aleksandr Minakov"
+              />
+              <h3 class="testimonials__name">Aleksandr</h3>
+              <div class="testimonials__rating">
+                <img
+                  class="testimonials__star"
+                  src="./images/icons/star-svgrepo-com.svg"
+                  alt="star"
+                />
+                <img
+                  class="testimonials__star"
+                  src="./images/icons/star-svgrepo-com.svg"
+                  alt="star"
+                />
+                <img
+                  class="testimonials__star"
+                  src="./images/icons/star-svgrepo-com.svg"
+                  alt="star"
+                />
+                <img
+                  class="testimonials__star"
+                  src="./images/icons/star-svgrepo-com.svg"
+                  alt="star"
+                />
+              </div>
+              <p class="testimonials__description">
+                FitAI has transformed my fitness journey! The personalized plans
+                and real-time feedback have taken my workouts to the next level.
+                Thanks to FitAI, I've achieved incredible progress and reached
+                goals I never thought possible.
+              </p>
+            </div>
+            <div class="testimonials__testimonial">
+              <img
+                class="testimonials__image"
+                src="./images/faces/jeremy-budiman-Uuyk0LiBB98-unsplash.jpg"
+                alt="portrait of Aleksandr Minakov"
+              />
+              <h3 class="testimonials__name">Jeremy</h3>
+              <div class="testimonials__rating">
+                <img
+                  class="testimonials__star"
+                  src="./images/icons/star-svgrepo-com.svg"
+                  alt="star"
+                />
+                <img
+                  class="testimonials__star"
+                  src="./images/icons/star-svgrepo-com.svg"
+                  alt="star"
+                />
+                <img
+                  class="testimonials__star"
+                  src="./images/icons/star-svgrepo-com.svg"
+                  alt="star"
+                />
+                <img
+                  class="testimonials__star"
+                  src="./images/icons/star-svgrepo-com.svg"
+                  alt="star"
+                />
+              </div>
+              <p class="testimonials__description">
+                FitAI is now an essential part of my fitness routine. The
+                AI-powered system guides me with clear instructions and
+                real-time feedback, ensuring proper form and preventing
+                injuries. It's revolutionized the way I work out.
+              </p>
+            </div>
+            <div class="testimonials__testimonial">
+              <img
+                class="testimonials__image"
+                src="./images/faces/sarah-cervantes-79GLX12EY98-unsplash.jpg"
+                alt="portrait of Aleksandr Minakov"
+              />
+              <h3 class="testimonials__name">Sarah</h3>
+              <div class="testimonials__rating">
+                <img
+                  class="testimonials__star"
+                  src="./images/icons/star-svgrepo-com.svg"
+                  alt="star"
+                />
+                <img
+                  class="testimonials__star"
+                  src="./images/icons/star-svgrepo-com.svg"
+                  alt="star"
+                />
+                <img
+                  class="testimonials__star"
+                  src="./images/icons/star-svgrepo-com.svg"
+                  alt="star"
+                />
+                <img
+                  class="testimonials__star"
+                  src="./images/icons/star-svgrepo-com.svg"
+                  alt="star"
+                />
+              </div>
+              <p class="testimonials__description">
+                FitAI is a game-changer! Tracking progress, personalized
+                recommendations, and virtual classes have made my fitness
+                journey convenient and enjoyable. FitAI keeps me motivated, and
+                the results speak for themselves!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PLANS -->
+      <section class="plans section">
+        <div class="plans__wrapper">
+          <h2 class="plans__title">
+            The Perfect Plan For <span class="accent-underline">Everyone</span>
+          </h2>
+          <div class="plans__cards flex--between">
+            <div class="card">
+              <div class="card__wrapper">
+                <h3 class="card__title">FitAI Essentials</h3>
+                <div class="card__price">$29.99</div>
+                <p class="card__description">The perfect plan for beginners</p>
+                <ul class="card__feature-list">
+                  <li class="card__feature">
+                    <img
+                      src="./images/icons/check-mark-svgrepo-com.svg"
+                      alt=""
+                      class="card__feature-icon"
+                    />
+                    Personalized plans
+                  </li>
+                  <li class="card__feature">
+                    <img
+                      src="./images/icons/check-mark-svgrepo-com.svg"
+                      alt=""
+                      class="card__feature-icon"
+                    />
+                    Real-time feedback
+                  </li>
+                  <li class="card__feature">
+                    <img
+                      src="./images/icons/check-mark-svgrepo-com.svg"
+                      alt=""
+                      class="card__feature-icon"
+                    />
+                    Mobile app access
+                  </li>
+                  <li class="card__feature">
+                    <img
+                      src="./images/icons/check-mark-svgrepo-com.svg"
+                      alt=""
+                      class="card__feature-icon"
+                    />
+                    Virtual fitness classes
+                  </li>
+                  <li class="card__feature">
+                    <img
+                      src="./images/icons/check-mark-svgrepo-com.svg"
+                      alt=""
+                      class="card__feature-icon"
+                    />
+                    Progress tracking
+                  </li>
+                </ul>
+              </div>
+              <button class="btn card__btn">Click here to get started!</button>
+            </div>
+            <div class="card card--dark">
+              <div class="card__wrapper">
+                <h3 class="card__title">FitAI Plus</h3>
+                <div class="card__price">$49.99</div>
+                <p class="card__description">
+                  Our recommendation for most people.
+                </p>
+                <ul class="card__feature-list">
+                  <li class="card__feature">
+                    <img
+                      src="./images/icons/check-mark-svgrepo-com.svg"
+                      alt=""
+                      class="card__feature-icon"
+                    />
+                    Advanced programs
+                  </li>
+                  <li class="card__feature">
+                    <img
+                      src="./images/icons/check-mark-svgrepo-com.svg"
+                      alt=""
+                      class="card__feature-icon"
+                    />
+                    Exclusive discounts
+                  </li>
+                  <li class="card__feature">
+                    <img
+                      src="./images/icons/check-mark-svgrepo-com.svg"
+                      alt=""
+                      class="card__feature-icon"
+                    />
+                    VIP feature access
+                  </li>
+                  <li class="card__feature">
+                    <img
+                      src="./images/icons/check-mark-svgrepo-com.svg"
+                      alt=""
+                      class="card__feature-icon"
+                    />
+                    Personalized nutrition guidance
+                  </li>
+                  <li class="card__feature">
+                    <img
+                      src="./images/icons/check-mark-svgrepo-com.svg"
+                      alt=""
+                      class="card__feature-icon"
+                    />
+                    Priority customer support
+                  </li>
+                </ul>
+              </div>
+              <button class="btn card__btn">Click here to get started!</button>
+            </div>
+            <div class="card">
+              <div class="card__wrapper">
+                <h3 class="card__title">FitAI Elite</h3>
+                <div class="card__price">$79.99</div>
+                <p class="card__description">
+                  This plan is recommended for true veterans
+                </p>
+
+                <ul class="card__feature-list">
+                  <li class="card__feature">
+                    <img
+                      src="./images/icons/check-mark-svgrepo-com.svg"
+                      alt=""
+                      class="card__feature-icon"
+                    />
+                    One-on-one sessions
+                  </li>
+                  <li class="card__feature">
+                    <img
+                      src="./images/icons/check-mark-svgrepo-com.svg"
+                      alt=""
+                      class="card__feature-icon"
+                    />
+                    Enhanced analytics
+                  </li>
+                  <li class="card__feature">
+                    <img
+                      src="./images/icons/check-mark-svgrepo-com.svg"
+                      alt=""
+                      class="card__feature-icon"
+                    />
+                    VIP event access
+                  </li>
+                  <li class="card__feature">
+                    <img
+                      src="./images/icons/check-mark-svgrepo-com.svg"
+                      alt=""
+                      class="card__feature-icon"
+                    />
+                    Premium content library
+                  </li>
+                  <li class="card__feature">
+                    <img
+                      src="./images/icons/check-mark-svgrepo-com.svg"
+                      alt=""
+                      class="card__feature-icon"
+                    />
+                    Personalized goal setting
+                  </li>
+                </ul>
+              </div>
+              <button class="btn card__btn">Click here to get started!</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer section">
+      <div class="footer__wrapper">
+        <div class="footer__explore">
+          <h4 class="footer__links-title">EXPLORE</h4>
+          <ul class="footer__links">
+            <li class="footer__link">
+              <a href=".hero" class="scroll-link">About Us</a>
+            </li>
+            <li class="footer__link">
+              <a href=".how-to" class="scroll-link">How To</a>
+            </li>
+            <li class="footer__link">
+              <a href=".testimonials" class="scroll-link">Testimonials</a>
+            </li>
+            <li class="footer__link">
+              <a href=".plans" class="scroll-link">Pricing</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="footer__form" action="#">
+          <input
+            class="footer__email"
+            type="text"
+            placeholder="Your E-mail"
+            aria-label="E-mail"
+          />
+          <button class="btn footer__btn">Subscribe</button>
+        </form>
+
+        <div class="footer__socials">
+          <a href="#" class="footer__social"
+            ><img
+              src="./images/icons/facebook-svgrepo-com.svg"
+              alt="facebook icon"
+              class="footer__social-img"
+          /></a>
+          <a href="#" class="footer__social"
+            ><img
+              src="./images/icons/twitter-svgrepo-com.svg"
+              alt="twitter icon"
+              class="footer__social-img"
+          /></a>
+          <a href="#" class="footer__social"
+            ><img
+              src="./images/icons/instagram-svgrepo-com (1).svg"
+              alt="instagram icon"
+              class="footer__social-img"
+          /></a>
+        </div>
+
+        <div class="footer__legal">
+          <small>&copy; Thomas Mestdagh, All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

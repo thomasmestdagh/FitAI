@@ -1,0 +1,68 @@
+.hero {
+  &__wrapper {
+    gap: 10rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+    // padding: 16rem 0 12rem 0;
+  }
+
+  .container {
+    // padding: 0 3rem;
+  }
+
+  &__title {
+    font-size: $font-size-header;
+
+    font-weight: 500;
+  }
+
+  &__content {
+    margin-top: 3rem;
+    line-height: 1.5;
+  }
+
+  &__images {
+    // height: 50rem;
+    // width: 100%;
+    // position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  &__image {
+    border-radius: 2rem;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      transition: 0.2s all;
+      transform: scale(1.05);
+
+      &:hover {
+        transform: scale(1.15);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .hero {
+    // padding: 8rem 3rem 0rem 3rem;
+
+    &__wrapper {
+      padding-top: 10rem;
+      padding-bottom: 5rem;
+    }
+
+    &__images {
+      margin: 0 auto;
+
+      // overflow-x: hidden;
+      overflow-y: visible;
+    }
+  }
+}

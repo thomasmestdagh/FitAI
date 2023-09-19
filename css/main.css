@@ -1,0 +1,587 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Inter", sans-serif;
+  color: #212529;
+  overflow-x: hidden;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.section {
+  padding: 0rem 2rem;
+}
+
+.accent-underline {
+  border-bottom: 5px solid #fcc419;
+}
+
+.btn {
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: none;
+  background-color: #bbb;
+  color: #212529;
+  font-family: inherit;
+  transition: 0.2s all;
+}
+
+.flex--between {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.grid--2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.grid--3col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.padding--large {
+  padding: 4rem 3rem;
+}
+
+@media only screen and (max-width: 950px) {
+  .grid--2col {
+    grid-template-columns: 1fr;
+  }
+  .grid--3col {
+    grid-template-columns: 1fr;
+  }
+  .flex--between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6rem;
+  }
+}
+.mobile-navigation {
+  display: none;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+}
+
+.mobile-button {
+  position: absolute;
+  right: 4rem;
+  top: 4rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 2.2rem;
+  padding: 2rem;
+  background-color: transparent;
+  border: none;
+  background-image: url("/images/openmenu.png");
+  background-size: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fcc419;
+  border-radius: 2rem;
+}
+
+.mobile-links {
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.5s all;
+  background-color: #343a40;
+  padding-left: 4rem;
+  width: 100%;
+  border-bottom: 2px solid #fcc419;
+}
+
+.menu-open {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-height: 100vh;
+}
+
+.button-open {
+  background-image: url("/images/closemenu.png");
+}
+
+.mobile-link {
+  list-style-type: none;
+}
+
+.mobile-link:not(:first-child) {
+  margin-top: 5rem;
+}
+
+.mobile-link a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 950px) {
+  .mobile-navigation {
+    display: block;
+  }
+}
+.header {
+  background-color: #343a40;
+  overflow: hidden;
+}
+.header__wrapper {
+  background-color: #e9ecef;
+  margin: 3rem auto;
+  max-width: 120rem;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.header__wrapper .container {
+  border-radius: 2rem;
+  background-color: white;
+  min-height: 60rem;
+}
+.header__title {
+  margin-top: 25%;
+  font-size: 4.2rem;
+  font-weight: 500;
+}
+.header__description {
+  margin-top: 2rem;
+}
+.header__btn {
+  background-color: #fcc419;
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+}
+.header__btn:hover {
+  background-color: #fab005;
+}
+.header__navigation {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/Gyms/samuel-girven-fqMu99l8sqo-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header__links {
+  display: flex;
+  gap: 2rem;
+}
+.header__link {
+  list-style-type: none;
+}
+.header__link a:link,
+.header__link a:visited {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+  border-bottom: 1px solid transparent;
+}
+.header__link a:hover,
+.header__link a:active {
+  border-bottom: 1px solid white;
+}
+.header__logos {
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-column: 1/3;
+}
+.header__logo {
+  max-width: 15rem;
+  filter: saturate(0);
+}
+
+.main-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.main-logo__img {
+  max-height: 3rem;
+}
+.main-logo__name {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+.main-logo__name span {
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 950px) {
+  .header {
+    background-color: white;
+    height: 100svh;
+    padding: 0;
+  }
+  .header__wrapper {
+    display: block;
+    position: relative;
+    margin: 0;
+    height: 100%;
+    border-radius: 0 0 2rem 2rem;
+  }
+  .header__logos {
+    align-items: center;
+    min-height: 20%;
+  }
+  .header__logo {
+    max-width: 25%;
+  }
+  .header .container:first-child {
+    min-height: 80%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../images/Gyms/samuel-girven-fqMu99l8sqo-unsplash.jpg");
+  }
+  .header .container:nth-child(2) {
+    display: none;
+  }
+}
+.hero__wrapper {
+  gap: 10rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+}
+.hero__title {
+  font-size: 4.2rem;
+  font-weight: 500;
+}
+.hero__content {
+  margin-top: 3rem;
+  line-height: 1.5;
+}
+.hero__images {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.hero__image {
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.hero__image img {
+  width: 100%;
+  transition: 0.2s all;
+  transform: scale(1.05);
+}
+.hero__image img:hover {
+  transform: scale(1.15);
+}
+
+@media only screen and (max-width: 950px) {
+  .hero__wrapper {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+  .hero__images {
+    margin: 0 auto;
+    overflow-y: visible;
+  }
+}
+.how-to {
+  padding-bottom: 6rem;
+  position: relative;
+  overflow: hidden;
+}
+.how-to__header {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding-top: 10rem;
+  gap: 10rem;
+}
+.how-to__title {
+  font-size: 4.2rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.how-to__image {
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.how-to__image img {
+  width: 100%;
+  transition: 0.2s all;
+  transform: scale(1.05);
+}
+.how-to__image img:hover {
+  transform: scale(1.15);
+}
+.how-to__steps {
+  max-width: 120rem;
+  margin: 0 auto;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+  gap: 5rem;
+}
+.how-to__step-image {
+  max-width: 10rem;
+}
+.how-to__step-name {
+  margin-top: 2rem;
+  font-size: 2.6rem;
+}
+.how-to__step-description {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 950px) {
+  .how-to__header {
+    padding-top: 5rem;
+    max-width: 100%;
+    text-align: left;
+  }
+  .how-to__header *:first-child {
+    order: -1;
+  }
+  .how-to__header *:first-child {
+    order: 1;
+  }
+  .how-to__steps {
+    margin-top: 10rem;
+  }
+  .how-to__step:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+.testimonials {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+.testimonials__wrapper {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.testimonials__cards {
+  padding-top: 15rem;
+  padding-bottom: 10rem;
+}
+.testimonials__testimonial {
+  padding: 2rem;
+  background-color: #e9ecef;
+  color: #212529;
+  border-radius: 2rem;
+  position: relative;
+}
+.testimonials__title {
+  font-size: 4.2rem;
+  font-weight: 400;
+  margin-top: 10rem;
+}
+.testimonials__image {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3rem;
+}
+.testimonials__name {
+  padding-top: 4rem;
+}
+.testimonials__rating {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.testimonials__star {
+  max-width: 2rem;
+}
+.testimonials__description {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 950px) {
+  .testimonials__testimonial:not(:last-child) {
+    margin-bottom: 8rem;
+  }
+}
+.plans__wrapper {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.plans__title {
+  padding-top: 10rem;
+  font-size: 4.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+.plans__cards {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+
+.card {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+  border-radius: 3rem;
+  overflow: hidden;
+  padding: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.card--dark {
+  background-color: #212529;
+  color: white;
+  transform: scale(1.2);
+}
+.card__title {
+  margin-bottom: 1rem;
+}
+.card__price {
+  font-size: 4.2rem;
+  margin-bottom: 3rem;
+}
+.card__description {
+  margin: 2rem 0;
+}
+.card__feature {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+.card__feature-icon {
+  width: 2rem;
+}
+.card__btn:hover {
+  background-color: #fcc419;
+}
+
+@media only screen and (max-width: 950px) {
+  .card--dark {
+    transform: scale(1);
+  }
+}
+.footer {
+  background-color: #343a40;
+}
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  justify-items: center;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3rem 0rem;
+}
+.footer__wrapper > * {
+  padding: 2rem 0;
+}
+.footer__explore {
+  justify-self: left;
+}
+.footer__links {
+  margin-bottom: 2rem;
+}
+.footer__links-title {
+  margin-bottom: 4rem;
+  font-size: 2.2rem;
+  color: #e9ecef;
+  font-weight: 400;
+}
+.footer__link {
+  list-style-type: none;
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+}
+.footer__link a:link,
+.footer__link a:visited {
+  color: #e9ecef;
+  text-decoration: none;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+}
+.footer__link a:hover,
+.footer__link a:active {
+  border-bottom: 1px solid #e9ecef;
+}
+.footer__form {
+  align-self: center;
+}
+.footer__email {
+  padding: 1.5rem 1rem;
+  border-radius: 1rem 0 0 1rem;
+  border: none;
+  font-size: 1.6rem;
+}
+.footer__btn {
+  background-color: #fcc419;
+  padding: 1.5rem 2rem;
+  border-radius: 0 1rem 1rem 0;
+  font-size: 1.6rem;
+  color: #212529;
+}
+.footer__btn:hover {
+  background-color: #fab005;
+  cursor: pointer;
+}
+.footer__socials {
+  align-self: center;
+  justify-self: right;
+}
+.footer__social-img {
+  width: 3rem;
+  margin-left: 1rem;
+}
+.footer__legal {
+  grid-column: 1/4;
+  text-align: center;
+  color: #e9ecef;
+  border-top: 2px solid #e9ecef;
+  width: 100%;
+}
+
+@media only screen and (max-width: 950px) {
+  .footer__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .footer__email {
+    display: block;
+    border-radius: 2rem 2rem 0 0;
+  }
+  .footer__btn {
+    display: block;
+    width: 100%;
+    border-radius: 0 0 2rem 2rem;
+  }
+  .footer__legal {
+    grid-column: unset;
+  }
+  .footer__explore, .footer__socials {
+    justify-self: center;
+  }
+  .footer__explore {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
